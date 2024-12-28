@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enter Your Name</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none;">
+            <h3 style="font-family: 'Phosphate', sans-serif; cursor: pointer;">INQUIZIT</h3>
+        </a>
+    </header>
+    <section class="Name-section">
+        <ol class="instructions">
+            <li>Time Limit: You have 5 minutes to complete the quiz. Keep an eye on the timer!</li>
+            <li>Number of Questions: The quiz consists of 15 questions.</li>
+            <li>One Chance Per Question: Once you select an answer, you cannot go back or change it.</li>
+            <li>Single Answer: Choose only one answer per question. Make sure to pick carefully!</li>
+            <li>Results: At the end of the quiz, you’ll see your results, including your score and <br>feedback on your knowledge of the quiz topic.</li>
+            <p>Good luck, and have fun testing your knowledge!</p>
+          </ol>
+        <form class="name-form">
+            <label for="fname">Enter a user name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <button type="button" class="name-button" onclick="window.location.href='quiz.html';">Start Quiz</button>
+            <p id="error-message" style="color: red; font-size: 0.9rem;"></p>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Inquizit. All rights reserved.</p>
+    </footer>
+    <script>
+        // Save the user name to local storage when the form is submitted
+        document.getElementById("nameForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const userName = document.getElementById("fname").value;
+            if (userName.trim() === "") {
+                document.getElementById("error-message").textContent = "Please enter a valid name.";
+            } else {
+                localStorage.setItem("userName", userName); // Save the name in local storage
+                window.location.href = "quiz.html"; // Redirect to quiz page
+            }
+        });
+    </script>
+</body>
+</html>
