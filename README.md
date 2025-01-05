@@ -4,6 +4,20 @@ Welcome to **INQUIZIT**, a fun and interactive web app designed to challenge you
 
 ---
 
+### Home Screen
+![Home Screen](https://github.com/FortuneMth/Inquizit/blob/main/Screenshot%202025-01-05%20at%2021.37.43.png)
+
+### Quiz Selection
+![Quiz Selection](https://github.com/FortuneMth/Inquizit/blob/main/Screenshot%202025-01-05%20at%2021.38.02.png)
+
+### Quiz Question
+![Quiz Question](https://github.com/FortuneMth/Inquizit/blob/main/Screenshot%202025-01-05%20at%2021.38.18.png)
+
+### Results Page
+![Results Page](https://github.com/FortuneMth/Inquizit/blob/main/Screenshot%202025-01-05%20at%2021.38.59.png)
+
+---
+
 ## **Features**
 
 - **Interactive Landing Page**: Welcoming users with a clean, engaging design.
